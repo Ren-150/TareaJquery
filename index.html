@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Jquery</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-light colorheader" id="navbar">
+                <a class="navbar-brand titulos" style="color: white;" href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                    Web Ventas
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <div class="container">
+                <form>
+                    <img id="img1" style="display: none;" src="imagenes/imagen.jpg" alt="">
+                    <div class="form-row" style="padding-top: 20px;">
+                        <div class="form-group col-md-12">
+                            <label>Producto</label>
+                            <input type="text" class="form-control" id="prod">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Cantidad</label>
+                            <input type="number" class="form-control" id="cant">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label>Precio</label>
+                        <input type="number" class="form-control" id="precio">
+                    </div>
+                    
+                </form>
+                <button class="btn btn-primary" id="calcularmont">Calcular Monto</button>
+                <button class="btn btn-primary" id="cambiartema">Cambiar Color</button>
+                <button class="btn btn-primary" id="MImagen">Mostrar imagen</button>
+                <button class="btn btn-primary" id="HImagen">Ocultar imagen</button>
+                <button class="btn btn-primary marbutton" id="formLabels">Cambiar formato labels</button>
+                <button class="btn btn-primary marbutton" id="Limpiar1">Limpiar</button>
+            </div>
+        </div>
+        <div class="col-6">
+
+            <div class="container" style="padding-top: 20px;">
+                <div class="card" style="width: 28rem;">
+                    <img id="img2" style="display:none;" src="imagenes/imagen2.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Resultado:</h5>
+                        <p id="desc" class="tamaño_res"></p>
+                        <p id="res" class="tamaño_res">0</p>
+                        <button class="btn btn-danger" id="MImagen2">Mostrar imagen</button>
+                        <button class="btn btn-danger" id="HImagen2">Ocultar imagen</button>
+                        <button class="btn btn-danger" id="Limpiar2">Limpiar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
